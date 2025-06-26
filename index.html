@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>URL Shortener</title>
+</head>
+<body>
+    <h1>Shorten a URL</h1>
+    <form id="shorten-form">
+        <input type="text" name="url" placeholder="Enter URL" required>
+        <input type="number" name="validity" placeholder="Validity (minutes, default 30)">
+        <input type="text" name="shortcode" placeholder="Custom shortcode (optional)">
+        <button type="submit">Shorten</button>
+    </form>
+    <div id="result"></div>
+    <script>
+        document.getElementById('shorten-form').onsubmit = async function(e) {
+            e.preventDefault();
+            const url = this.url.value;
+            const validity = this.validity.value;
+            const shortcode = this.shortcode.value;
+            const body = { url };
+            if (validity) body.validity = parseInt(validity);
+            if (shortcode) body.shortcode = shortcode;
+            const res = await fetch('/shorturls', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(body)
+            });
+            const data = await res.json();
+            if (res.ok) {
+                document.getElementById('result').innerHTML = 
+                    `<p>Short Link: <a href="${data.shortLink}" target="_blank">${data.shortLink}</a></p>
+                     <p>Expires at: ${data.expiry}</p>`;
+            } else {
+                document.getElementById('result').innerText = data.error || 'Error';
+            }
+        }
+    </script>
+</body>
+</html>
