@@ -1,15 +1,9 @@
 # 73772218118
 Afford Med Drive
-# Jaya Krishna S 💡
-
-
+# Jaya Krishna S 
 
 I’m a fast learner with a builder’s mindset.  
 From blockchain to AI, I turn ideas into real solutions that create **impact**.
-
----
-
-## 🚀 Quick Snapshot
 
 **BACKEND**
 1.using app.py for process.
@@ -21,21 +15,20 @@ From blockchain to AI, I turn ideas into real solutions that create **impact**.
 
 and the link is - 🔹 [tunnel](https://affordmed.jayakrishna.xyz/)  
 
----
 
 ## 👀 Why Me?
 
-✅ I don’t fake knowledge — I **learn fast**  
-✅ I’ve built what many only plan  
-✅ I’m ready to grow with **Afford Medicals**
+* I don’t fake knowledge — I **learn fast**  
+* I’ve built what many only plan  
+* I’m ready to grow with **Afford Medicals**
 
 ---
 
-## 🔗 Let’s Connect
+## Let’s Connect
 
-- 🔹 [LinkedIn](https://www.linkedin.com/in/jayakrishna-s)  
-- 🔹 [GitHub](https://github.com/jayakrishnas)
+-  [LinkedIn](https://www.linkedin.com/in/jayakrishna-s)  
+-  [GitHub](https://github.com/jayakrishnas)
 
 ---
 
-*Thanks for the opportunity. I’m ready to learn, contribute, and build amazing things with your team.* 🙌
+*Thanks for the opportunity. I’m ready to learn, contribute, and build amazing things with your team.* 
